@@ -90,6 +90,7 @@ stages:
             displayName: 'Azure functions app deploy'
             inputs:
               azureSubscription: '$(azureSubscription)'
-              appType: functionAppLinux
-              appName: $(functionAppName)
+              appType: 'functionAppLinux'
+              appName: '$(functionAppName)'
               package: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
+              appSettings: '-ENV1 1000 -ENV2 2000 -ENV3 3000'
