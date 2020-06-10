@@ -3,6 +3,13 @@
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/python
 
+# **************************************************************************
+# Assumptions : 
+# a. Resource_Group Pre Created
+# b. Function App Resource Deployed
+# **************************************************************************
+
+
 trigger:
 - master
 
